@@ -1,23 +1,23 @@
-export function renderGem(gem) {
+export function renderGem(stone) {
     const div = document.createElement('div');
-    div.classList.add('gem');
+    div.classList.add('stone');
     
     const h1 = document.createElement('h1');
-    h1.textContent = gem.name;
+    h1.textContent = stone.name;
 
     const h2 = document.createElement('h2');
-    h1.textContent = gem.metaphysics;
+    h1.textContent = stone.metaphysics;
 
     const img = document.createElement('img');
-    img.src = gem.image;
+    img.src = stone.image;
 
     const p = document.createElement('p');
-    p.textContent = `${gem.name} is the ${gem.month} gemstone, with a hardness level of ${gem.hardness}.`;
+    p.textContent = `${stone.name} is the ${stone.month} gemstone, with a hardness level of ${stone.hardness}.`;
 
     const ul = document.createElement('ul');
-    for (let metaphysics of gem.gem) {
+    for (let quality of stone.metaphysics) {
         const li = document.createElement('li');
-        li.textContent = metaphysics;
+        li.textContent = quality;
         ul.append(li);
     }
 

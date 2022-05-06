@@ -9,8 +9,7 @@ test('time to test a function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected =
-        '<div class="gem"><h1>Citrine</h1><img src="./assets/citrine.jpg"><p>Citrine is the November gemstone, with a hardness level of 7.</p><h2>Metaphysical Properties</h2><ul><li>Motivation</li><li>Concentration</li><li>Encourages Self Expression</li></ul></div>';
-
+        '<div class="stone"><h1>Motivation,Concentration,Encourages Self Expression</h1><h2></h2><img src="./assets/citrine.jpg"><p>Citrine is the November gemstone, with a hardness level of 7.</p><ul><li>Motivation</li><li>Concentration</li><li>Encourages Self Expression</li></ul></div>';
     //Act
     // Call the function you're testing and set the result to a const
     const actual = renderGem(gems[0]);

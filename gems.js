@@ -1,3 +1,3 @@
 export const gems = [
-    { name: 'Citrine', Month:'November', hardness:'7' }, 
+    { name: 'Citrine', image:'./assets/citrine.jpg', month:'November', hardness:'7', metaphysics:['Motivation', 'Concentration', 'Encourages Self Expression'] }, 
 ];
